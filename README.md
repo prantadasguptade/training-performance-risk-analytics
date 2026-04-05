@@ -133,8 +133,10 @@ A training manager can use this system to:
 - DAX (Data Analysis Expressions)  
 
 ---
+## 🔧 Key Outcome
 
+This system enables early identification of high-risk learners, allowing training managers to take proactive action and improve completion rates.
 
-## Note
+## 📄 Note
 
 This project is created for portfolio purposes and demonstrates applied business analytics and decision-support thinking.
