@@ -87,7 +87,16 @@ This dashboard provides a structured approach to:
 The dataset used in this project is simulated based on real-world Learning & Development scenarios observed in enterprise environments.
 
 ---
+## Dashboard Preview
 
+### Executive Overview
+![Executive Overview](assets/Page1.png)
+
+### Performance Insights
+![Performance Insights](assets/Page2.png)
+
+### Risk & Action Dashboard
+![Risk Dashboard](assets/Page3.png)
 ## Note
 
 This project is created for portfolio purposes and demonstrates applied business analytics and decision-support thinking.
