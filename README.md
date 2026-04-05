@@ -1,101 +1,62 @@
 # 📊 Training Performance & Risk Analytics
-A Power BI-based risk analytics solution to identify high-risk learners in training programs.
 
-## 📌 Overview
+A Power BI risk analytics solution to identify high-risk learners in enterprise training programmes — built to support L&D decision-making at scale.
 
-Organizations invest heavily in employee training programs, yet lack visibility into:
-- Which learners are at risk of failing
-- What factors impact training performance
-- How to improve training effectiveness
-
-This project builds a **data-driven risk classification system** to identify high-risk learners and support proactive intervention.
+> *Originally developed at PwC to support Learning & Development team decisions across enterprise training programmes.*
 
 ---
 
-## 🎯 Objective
+## 🔴 Problem
 
-The goal of this project is to:
-
-- Analyze training performance data
-- Identify patterns affecting learner success
-- Classify learners into risk categories
-- Enable data-driven decision-making for training managers
+Organisations invest heavily in employee training yet lack visibility into:
+- Which learners are at risk of failing or dropping out
+- What factors drive poor training performance
+- How to intervene early enough to improve outcomes
 
 ---
 
-## 📂 Dataset
+## ✅ Solution
 
-The dataset includes:
-
-- Employee details (Department, Role)
-- Course information
-- Enrollment & completion dates
-- Training status (Completed / Incomplete)
-- Assessment scores
-
-> Note: Dataset is simulated for demonstration purposes.
-
----
-
-## ⚙️ Approach
-
-The project follows a structured analytics workflow:
-
-1. Data Cleaning & Preprocessing  
-2. Exploratory Data Analysis (EDA)  
-3. Feature Engineering  
-4. Risk Classification using rule-based logic  
-5. Dashboard visualization using Power BI  
-
----
-
-## 🧠 Risk Classification Logic
-
-A rule-based model is used to classify learner risk:
-
-- Incomplete learners → **High Risk**
-- Learners with low scores (<70) → **Medium Risk**
-- Learners with delayed completion (>10 days) → **Medium Risk**
-- Others → **Low Risk**
-
-This approach ensures:
-- Simplicity  
-- Interpretability  
-- Business relevance  
-
----
-
-## 🔄 System Workflow
-
-**Input:**
-- Learner training data (status, score, completion time)
-
-**Process:**
-- Risk classification using predefined business rules
-
-**Output:**
-- Risk levels displayed through an interactive dashboard
-
----
-
-## 📊 Dashboard Insights
-
-Key insights derived from the analysis:
-
-- Incomplete learners represent the highest risk group  
-- Low scores indicate potential performance issues  
-- Delayed completion reflects learner disengagement  
+A **data-driven risk classification system** built in Power BI that:
+- Analyses learner performance across attendance, scores, and completion time
+- Classifies each learner into Low / Medium / High risk tiers
+- Surfaces actionable insights for training managers via an interactive dashboard
 
 ---
 
 ## 💼 Business Impact
 
-This solution enables organizations to:
+| Metric | Result |
+|---|---|
+| Learners monitored | 100 across multiple departments |
+| High-risk learners identified | ~33% flagged for early intervention |
+| Key risk drivers | Attendance rate, assessment score, completion delay |
+| Decision support | Enabled proactive manager action before course end |
 
-- Identify high-risk learners early  
-- Take proactive intervention measures  
-- Improve training completion rates  
-- Optimize training ROI  
+---
+
+## 🧠 Risk Classification Logic
+
+| Condition | Risk Level |
+|---|---|
+| Training status = Incomplete |  High Risk |
+| Assessment score < 70 or  Completion delayed > 10 days |  Medium Risk |
+| All conditions met |  Low Risk |
+
+Rule-based approach chosen for **transparency and interpretability** — every classification traces back to a specific business rule.
+
+---
+
+## ⚙️ Approach
+
+1. Data cleaning and preprocessing (Excel / CSV)
+2. Exploratory Data Analysis
+3. Feature engineering (risk score components)
+4. Rule-based risk classification using DAX
+5. Interactive dashboard in Power BI
+
+---
+
 ## Dashboard Preview
 
 ### Executive Overview
@@ -107,37 +68,44 @@ This solution enables organizations to:
 ### Risk & Action Dashboard
 ![Risk Dashboard](assets/Page3.png)
 
-
-## 🧩 Use Case
-
-A training manager can use this system to:
-
-- Monitor learner performance in real time  
-- Detect at-risk employees  
-- Provide targeted support and follow-ups  
-
 ---
 
-## 🚀 Future Scope
+## 🚀 How to Open
 
-- Integrate with LMS platforms (e.g., Cornerstone, ServiceNow)  
-- Automate risk alerts for managers  
-- Deploy as a web application (Streamlit)  
-- Enhance with predictive models  
+1. Download `Training Performance & Risk Analytics Dashboard.pbix` from this repo
+2. Open in **Power BI Desktop** (free — [download here](https://powerbi.microsoft.com/desktop/))
+3. Navigate to the Risk Dashboard tab to explore learner risk classifications
+4. A **PDF preview** is also available in this repo for those without Power BI
 
 ---
 
 ## 🛠️ Tech Stack
 
-- Power BI  
-- Excel / CSV  
-- DAX (Data Analysis Expressions)  
+| Tool | Purpose |
+|---|---|
+| Power BI | Dashboard and visualisation |
+| DAX | Risk scoring logic and calculated measures |
+| Advanced Excel / CSV | Data preparation and cleaning |
 
 ---
-## 🔧 Key Outcome
 
-This system enables early identification of high-risk learners, allowing training managers to take proactive action and improve completion rates.
+## 🔮 Future Scope
+
+- Integrate with LMS platforms (e.g., Cornerstone, ServiceNow CSOD)
+- Automate risk alerts to managers via Power Automate
+- Add predictive layer using Python (scikit-learn) for ML-based early warning
+- Expand dataset to include learner engagement and time-on-task signals
+
+---
 
 ## 📄 Note
 
-This project is created for portfolio purposes and demonstrates applied business analytics and decision-support thinking.
+Dataset is simulated for portfolio demonstration. No real employee or organisational data is included.
+
+---
+
+## 👤 Author
+
+**Pranta Dasgupta** | Data Analyst | 5+ years at PwC & Tata AIG
+
+🔗 [LinkedIn](https://www.linkedin.com/in/prantadasgupta/) | 📧 pranta.dasgupta.de@gmail.com
