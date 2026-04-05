@@ -7,20 +7,17 @@ This project analyzes employee training data to evaluate completion trends, perf
 It is designed to simulate how organizations can monitor learning effectiveness and identify areas requiring intervention using data-driven insights.
 
 ---
+## Business Problem
+Organizations invest heavily in employee training but lack visibility into:
+- Which learners are at risk of failing
+- What factors impact training performance
+- How to improve training ROI
 
 ## Objective
-
-To improve training completion and identify performance and compliance risks across departments.
-
----
-
-## Problem Statement
-
-In many organizations, training data is tracked but not effectively used for decision-making. This leads to:
-
-* Low visibility into completion rates
-* Difficulty identifying underperforming employees
-* Delayed action on compliance risks
+Build a data-driven system to:
+- Identify high-risk learners
+- Analyze performance patterns
+- Provide actionable business recommendations
 
 ---
 
@@ -85,7 +82,17 @@ This dashboard provides a structured approach to:
 ## Dataset
 
 The dataset used in this project is simulated based on real-world Learning & Development scenarios observed in enterprise environments.
+The dataset includes:
+- Learner attendance
+- Assessment scores
+- Course completion status
+- Submission timelines
+## Approach
 
+1. Data Cleaning & Preprocessing
+2. Exploratory Data Analysis (EDA)
+3. Feature Engineering
+4. Risk Segmentation
 ---
 ## Dashboard Preview
 
@@ -97,6 +104,22 @@ The dataset used in this project is simulated based on real-world Learning & Dev
 
 ### Risk & Action Dashboard
 ![Risk Dashboard](assets/Page3.png)
+
+## Business Recommendations
+
+- Implement early warning system for low attendance learners
+- Send automated alerts for delayed submissions
+- Focus additional support on high-risk coursesm
+
+## Future Scope
+
+- Deploy model using Streamlit dashboard
+- Integrate with LMS platforms (e.g., Cornerstone, ServiceNow)
+- Real-time risk monitoring system
+
+
+
+
 ## Note
 
 This project is created for portfolio purposes and demonstrates applied business analytics and decision-support thinking.
