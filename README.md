@@ -87,12 +87,24 @@ The dataset includes:
 - Assessment scores
 - Course completion status
 - Submission timelines
+---
 ## Approach
 
 1. Data Cleaning & Preprocessing
 2. Exploratory Data Analysis (EDA)
 3. Feature Engineering
 4. Risk Segmentation
+---
+## Risk Classification Approach
+
+A rule-based approach is used to classify learner risk:
+
+- Incomplete learners are marked as High Risk
+- Learners with low scores (<70) are Medium Risk
+- Learners with delayed completion (>10 days) are Medium Risk
+- Others are classified as Low Risk
+
+This model is simple, interpretable, and aligned with business needs.
 ---
 ## Dashboard Preview
 
