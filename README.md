@@ -1,4 +1,5 @@
 # 📊 Training Performance & Risk Analytics
+A Power BI-based risk analytics solution to identify high-risk learners in training programs.
 
 ## 📌 Overview
 
